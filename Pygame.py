@@ -261,7 +261,7 @@ class Player(pygame.sprite.Sprite):
 	def player_input(self):
 		keys = pygame.key.get_pressed()
 		if keys[pygame.K_SPACE] and self.rect.bottom >= 300:
-			self.gravity = -10
+			self.gravity = -20
 			self.jump_sound.play()
 
 	def apply_gravity(self):
@@ -344,11 +344,11 @@ def display_score():
 # 	return True
 
 def collision_sprite():
-	# if pygame.sprite.spritecollide(player.sprite,obstacle_group,False):
-	# 	obstacle_group.empty()
-	# 	return False
-	# else: return True
-       return True
+	if pygame.sprite.spritecollide(player.sprite,obstacle_group,False):
+		obstacle_group.empty()
+		return False
+	else: return True
+       # return True
 
 # def player_animation():
 # 	global player_surf, player_index

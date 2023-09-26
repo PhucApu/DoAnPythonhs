@@ -237,7 +237,7 @@
 # for i in temp:
 #        print(i)
 
-#----------------------------------- Distionary (giống map) ---------------------------------------------------
+#----------------------------------- Dictionary (giống map) ---------------------------------------------------
 # Map : giống set  , những được lưu trữ dưới dạng cặp key và value 
 # food = {"USA" : "My" , "VN":"Viet nam" , "JP":"Japan"}
 # food.update({"TL":"Thai lan"})     # them 1 key-value moi
